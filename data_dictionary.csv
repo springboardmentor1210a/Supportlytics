@@ -1,0 +1,34 @@
+Column Name,Data Type,Missing Records,Unique Values,Description
+ticket_id,int64,0,200000,Unique primary key identifier for each ticket.
+customer_name,str,0,400,Full name of the reporting customer.
+customer_email,str,0,191751,Email address contact identifier.
+product,str,0,10,Product family name linked to issue context.
+category,str,0,10,Raw text categorization of system behavior.
+issue_description,str,0,10,Freeform textual report logs provided by client.
+resolution_notes,str,0,10,Structural logs regarding engineering resolution steps.
+priority,str,0,4,Qualitative priority ranking label.
+status,str,0,5,Workflow stage state indicators (Open/Closed/Pending).
+channel,str,0,5,"Inbound intake medium (Email, Chat, Social Media, etc.)."
+region,str,0,6,Geographic cluster origin of system customer.
+customer_age,int64,0,58,No metadata summary available.
+customer_gender,str,0,3,No metadata summary available.
+subscription_type,str,0,4,No metadata summary available.
+customer_tenure_months,int64,0,60,No metadata summary available.
+previous_tickets,int64,0,21,No metadata summary available.
+customer_satisfaction_score,int64,0,5,No metadata summary available.
+first_response_time_hours,float64,0,7151,No metadata summary available.
+resolution_time_hours,float64,0,23896,No metadata summary available.
+ticket_created_date,datetime64[us],0,1096,Parsed datetime vector tracking submission window.
+ticket_resolved_date,datetime64[us],0,1110,Parsed datetime vector tracking resolution stamp.
+escalated,str,0,2,No metadata summary available.
+sla_breached,str,0,2,No metadata summary available.
+operating_system,str,0,5,Client desktop or system runtime platform environment.
+browser,str,0,4,Client application rendering engine used (Imputed via Mode).
+payment_method,str,0,5,No metadata summary available.
+language,str,0,6,No metadata summary available.
+preferred_contact_time,str,0,4,No metadata summary available.
+issue_complexity_score,int64,0,10,No metadata summary available.
+customer_segment,str,0,3,No metadata summary available.
+Type,str,0,3,ITIL categorization engine classification (Derived).
+Resolution_Duration_Days,int64,0,15,Net integer total of calendar days active (Derived).
+Priority_Score,int64,0,4,Numeric priority weighting index scale (Derived).
