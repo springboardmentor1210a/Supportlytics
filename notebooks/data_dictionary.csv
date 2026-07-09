@@ -1,0 +1,23 @@
+Column,Data Type
+ticket_id,object
+created_at,datetime64[ns]
+customer_id,object
+customer_segment,object
+channel,object
+product_area,object
+issue_type,object
+priority,object
+status,object
+sla_plan,object
+initial_message,object
+agent_first_reply,object
+resolution_summary,object
+resolution_time_hours,float64
+reopened,int64
+customer_sentiment,object
+csat_score,int64
+has_attachment,int64
+platform,object
+region,object
+Resolution_Duration,float64
+Priority_Score,float64
