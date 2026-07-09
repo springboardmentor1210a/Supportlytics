@@ -32,7 +32,7 @@ The project aims to:
 │   └── cleaned_support_tickets.csv  
 ├── 📄 notebooks/                    # Colab notebooks
 │   └── support_ticket_analysis.ipynb  
-├── 📄 Power BI/                      # Tableau workbook & exports
+├── 📄 Power BI/                      # Power BI workbook & exports
 │   ├── support_dashboard.twbx  
 │   └── dashboard_screenshots/  
 └── 📄 README.md
