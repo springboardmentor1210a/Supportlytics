@@ -22,3 +22,58 @@ The project aims to:
 | Excel          | Supplemental data validation         |
 
 ---
+
+## **📂 Repository Structure**  
+```
+📂 customer-support-analysis/
+├── 📄 raw_data/                     # Original dataset
+│   └── customer_support_tickets.csv  
+├── 📄 processed_data/               # Cleaned data for Tableau
+│   └── cleaned_support_tickets.csv  
+├── 📄 notebooks/                    # Colab notebooks
+│   └── support_ticket_analysis.ipynb  
+├── 📄 Power BI/                      # Tableau workbook & exports
+│   ├── support_dashboard.twbx  
+│   └── dashboard_screenshots/  
+└── 📄 README.md
+                  
+```
+
+## **🔍 Key Insights from Analysis**  
+
+### **1. Most Common Issues**  
+
+- **Top 3 Problem Categories**:  
+  1. **Technical Issues (38%)**  
+     - Frequent keywords: "not turning on", "network problem", "setup failed"  
+     - Worst-affected products: Microsoft Office, HP Pavilion  
+  2. **Billing Inquiries (22%)**  
+  3. **Refund Requests (18%)**  
+
+### **2. Response Time Metrics**  
+| Metric                  | Average Time |  
+|-------------------------|--------------|  
+| First Response Time     | 4.2 hours    |  
+| Resolution Time         | 8.7 hours    |  
+- **Critical tickets** take 12+ hours (needs prioritization).  
+
+### **3. Customer Satisfaction (CSAT)**  
+- **Average Rating: 3.1/5**  
+- **Lowest-rated areas**:  
+  - Slow resolution for hardware issues  
+  - Unclear refund processes  
+
+---
+
+## **📊 Power BI Dashboard Features**  
+![customer support dashborad main](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Express-collage.png?raw=true)
+
+**Key Visualizations**:  
+1. **Ticket Volume Trends** (by product/month)  
+2. **Response Time Distribution** (priority-wise)  
+3. **CSAT Score Distribution**
+4. **Resolution Time Distribution**
+5. **Tickets Over Time**
+
+
+---
