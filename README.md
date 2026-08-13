@@ -66,7 +66,8 @@ The project aims to:
 ---
 
 ## **📊 Power BI Dashboard Features**  
-![customer support dashborad main](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Express-collage.png?raw=true)
+![customer support dashborad main](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Dashboard1.png?raw=true)
+![](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Dashboard2.png?raw=true)
 
 **Key Visualizations**:  
 1. **Ticket Volume Trends** (by product/month)  
