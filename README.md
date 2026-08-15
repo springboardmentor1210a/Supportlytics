@@ -71,6 +71,10 @@ The project aims to:
 ![](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Dashboard3.png?raw=true)
 ![](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Dashboard4.png?raw=true)
 ![](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Dashboard5.png?raw=true)
+![](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/dashboard6.png?raw=true)
+
+---
+
 **Key Visualizations**:  
 1. **Ticket Volume Trends** (by product/month)  
 2. **Response Time Distribution** (priority-wise)  
