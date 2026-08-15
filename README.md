@@ -68,7 +68,9 @@ The project aims to:
 ## **📊 Power BI Dashboard Features**  
 ![customer support dashborad main](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Dashboard1.png?raw=true)
 ![](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Dashboard2.png?raw=true)
-
+![](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Dashboard3.png?raw=true)
+![](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Dashboard4.png?raw=true)
+![](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Dashboard5.png?raw=true)
 **Key Visualizations**:  
 1. **Ticket Volume Trends** (by product/month)  
 2. **Response Time Distribution** (priority-wise)  
@@ -78,7 +80,3 @@ The project aims to:
 
 
 ---
-![cs1](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Image1.png?raw=true)
-![cs2](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Image2.png?raw=true)
-![cs3](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Image3.png?raw=true)
-![cs4](https://github.com/springboardmentor1210a/Supportlytics/blob/JagannathReddy/Supportlytics/Image4.png?raw=true)
