@@ -65,27 +65,8 @@ Important columns include:
 
 ## 🔄 Project Workflow
 
-```text
-Dataset Loading
-      ↓
-Data Understanding
-      ↓
-Data Cleaning
-      ↓
-Feature Engineering
-      ↓
-Exploratory Data Analysis
-      ↓
-Cluster & Similarity Analysis
-      ↓
-Performance Analysis
-      ↓
-Geographic Analysis
-      ↓
-Power BI Dashboard
-      ↓
-Executive Insights & Recommendations
-```
+<img width="1611" height="720" alt="image" src="https://github.com/user-attachments/assets/a0ebfa23-8531-4575-b6f4-3b4b3064eac6" />
+
 
 # 📅 Week-Wise Progress
 
