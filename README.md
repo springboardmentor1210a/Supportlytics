@@ -3,7 +3,7 @@
 
 > **Internship Project — IT Support Analytics**
 
-![Dashboard Preview](images/dashboard_full_preview.png)
+![Executive Overview](images/Executive%20Overview.png)
 
 ---
 
@@ -27,7 +27,7 @@ Enterprise IT support departments process thousands of tickets monthly across mu
 - **Perform Exploratory Analysis**: Examine distribution trends across ticket types, issue categories, priorities, and inbound channels.
 - **Analyze Issue Clusters**: Evaluate semantic similarity scores and identify high-friction problem clusters.
 - **Benchmark Team & Regional Performance**: Quantify turnaround speed, customer satisfaction (CSAT), and SLA compliance across support teams and geographic hubs.
-- **Deploy Interactive Dashboards**: Provide unified visual reporting via native Power BI Desktop (`.pbix` / `.pbip`) and an interactive Streamlit web application.
+- **Deploy Interactive Dashboard**: Deliver comprehensive visual reporting and operational intelligence via native Power BI Desktop (`Supportlytics_Dashboard.pbix`).
 
 ---
 
@@ -64,8 +64,8 @@ Enterprise IT support departments process thousands of tickets monthly across mu
 
 - **Programming & Core**: Python 3.10+
 - **Data Analysis & Manipulation**: Pandas, NumPy
-- **Data Visualization**: Matplotlib, Seaborn, Plotly Express, Plotly Graph Objects
-- **Dashboarding & Business Intelligence**: Microsoft Power BI Desktop (`.pbix` / `.pbip`), Streamlit
+- **Data Visualization**: Matplotlib, Seaborn
+- **Dashboarding & Business Intelligence**: Microsoft Power BI Desktop (`Supportlytics_Dashboard.pbix`)
 - **Computational Environment**: Jupyter Notebook
 - **Data Storage & Exchange**: CSV, Microsoft Excel (`openpyxl`)
 
@@ -110,7 +110,7 @@ Enterprise IT support departments process thousands of tickets monthly across mu
 └───────────────────────────┬─────────────────────────────┘
                             │
 ┌───────────────────────────▼─────────────────────────────┐
-│             Power BI & Streamlit Dashboards             │
+│                 Power BI Dashboard                      │
 │        (6-Page executive reporting & drilldowns)        │
 └───────────────────────────┬─────────────────────────────┘
                             │
@@ -167,33 +167,25 @@ Enterprise IT support departments process thousands of tickets monthly across mu
 ---
 
 ### 13. Power BI Dashboard
-The native Power BI report ([`Supportlytics_IT_Support_Analytics_Dashboard.pbix`](Supportlytics_IT_Support_Analytics_Dashboard.pbix)) is organized into 6 dedicated analytical pages:
+The native Power BI report ([`Supportlytics_Dashboard.pbix`](Supportlytics_Dashboard.pbix)) is organized into 6 dedicated analytical pages:
 
-1. **Executive Dashboard**: High-level command center displaying top 5 KPIs, ticket type breakdown, status lifecycle, priority share, category rankings, and cluster scatter plots.
+1. **Executive Overview**: High-level command center displaying top 5 KPIs, ticket type breakdown, status lifecycle, priority share, category rankings, and cluster scatter plots.
 2. **Ticket & Category Analysis**: Detailed breakdown of category volume, priority distribution, department queues, status lifecycle, and a Category × Priority cross-tabulation matrix.
 3. **Cluster & Similarity Analysis**: Evaluates NLP cluster similarity scores, ticket volume per cluster, SLA adherence by cluster, and cluster efficiency metrics.
-4. **Performance Trend Analysis**: Analyzes resolution velocity across priority tiers and ticket types, team turnaround rankings, country benchmarks, and an active high-priority pending ticket watchlist.
-5. **Geographic & Category Insights**: Regional concentration donuts, country volume distribution, Geographic Category Heatmap matrices, and Turnaround vs. CSAT regional bubble charts.
-6. **Detailed Ticket Inspector**: Granular operational inspection tool featuring 8 interactive slicers (Country, Region, Category, Priority, Status, Team, Ticket Type, Ticket ID), filtered KPI cards, and a complete 16-column ticket record grid.
+4. **Performance Analysis**: Analyzes resolution velocity across priority tiers and ticket types, team turnaround rankings, country benchmarks, and an active high-priority pending ticket watchlist.
+5. **Geographic Analysis**: Regional concentration donuts, country volume distribution, Geographic Category Heatmap matrices, and Turnaround vs. CSAT regional bubble charts.
+6. **Ticket Details**: Granular operational inspection tool featuring interactive slicers (Country, Region, Category, Priority, Status, Team, Ticket Type, Ticket ID), filtered KPI cards, and a complete ticket record grid.
 
 ---
 
-### 14. Streamlit Dashboard
-The Streamlit application ([`app.py`](app.py)) provides a standalone, web-based analytics environment matching the multi-page Power BI structure:
-- **Interactive Multi-Page Navigation**: Sidebar menu for switching between all 6 analytical modules.
-- **Global Dynamic Slicers**: Interactive date ranges, Country, Region, Category, Priority, and Status dropdowns.
-- **Responsive Visualizations**: Plotly bar charts, donut charts, scatter plots, and cross-tabulation heatmaps.
-
----
-
-### 15. Key Insights
+### 14. Key Insights
 1. **Automation Opportunities**: Routine clusters (*Account Lockout*, *Software Renewals*) represent ~20% of aggregate volume with high similarity (>0.85), making them prime candidates for automated self-service.
 2. **Operational Bottleneck**: *Enterprise Apps Support* handles complex database and ERP issues with longer debugging cycles, resulting in the highest backlog concentration.
 3. **Priority Alignment**: Critical tickets are resolved in an average of 4.2 hours, adhering to high-urgency SLA targets, whereas Problems take approximately 2x longer than Incidents across all tiers.
 
 ---
 
-### 16. Recommendations
+### 15. Recommendations
 1. **Deploy AI Self-Service / RPA**: Automate tier-1 password resets and software provisioning requests to deflect up to 20% of inbound workload.
 2. **Rebalance Enterprise App Staffing**: Cross-train and reallocate Tier-2 engineers to the Enterprise Apps queue during month-end ERP reporting periods.
 3. **Standardize Cloud & API Telemetry**: Enforce structured error payloads for cloud microservice failures to shorten root-cause investigation duration.
@@ -201,7 +193,7 @@ The Streamlit application ([`app.py`](app.py)) provides a standalone, web-based 
 
 ---
 
-### 17. Project Structure
+### 16. Project Structure
 
 ```
 Supportlytics-IT-Support-Analytics/
@@ -230,21 +222,19 @@ Supportlytics-IT-Support-Analytics/
 │   ├── Supportlytics_Interactive_Dashboard.html
 │   └── figures/                               # 12 Generated High-Res PNG Visualizations
 │
-├── images/                                    # UI / Dashboard Preview Screenshots
-│   ├── dashboard_full_preview.png
-│   ├── kpi_cards_result.png
-│   ├── main_charts_result.png
-│   └── performance_charts_result.png
+├── images/                                    # Dashboard Page Screenshots
+│   ├── Executive Overview.png
+│   ├── Ticket & Category Analysis.png
+│   ├── Cluster & Similarity Analysis.png
+│   ├── Performance Analysis.png
+│   ├── Geographic Analysis.png
+│   └── Ticket Details.png
 │
-├── Supportlytics_IT_Support_Analytics_Dashboard.Dataset/ # Power BI PBIP Dataset Definition
-├── Supportlytics_IT_Support_Analytics_Dashboard.Report/  # Power BI PBIP Report Definition
-│
-├── Supportlytics_IT_Support_Analytics_Dashboard.pbix # Active Power BI Report File
+├── Supportlytics_Dashboard.pbix               # Final Power BI Dashboard
 ├── Supportlytics_PowerBI_Data.xlsx            # Power BI Excel Data Source
 ├── Supportlytics_PowerBI_Data.csv             # Power BI CSV Data Source
 ├── Supportlytics_DAX_Measures.txt             # Reference DAX Measures
 ├── PowerBI_6_Page_Build_Guide.md              # Power BI Build Guide
-├── app.py                                     # Streamlit Web Application
 ├── requirements.txt                           # Python Dependencies
 ├── .gitignore                                 # Git Ignore Rules
 └── README.md                                  # This File
@@ -252,11 +242,11 @@ Supportlytics-IT-Support-Analytics/
 
 ---
 
-### 18. How to Run
+### 17. How to Run
 
 #### Prerequisites
 - Python 3.8+
-- Power BI Desktop (for `.pbix` / `.pbip` reports)
+- Power BI Desktop (for `.pbix` report)
 
 #### 1. Setup Environment & Install Dependencies
 ```bash
@@ -279,17 +269,12 @@ jupyter notebook
 # Open and run notebooks 01 through 06 sequentially in notebooks/
 ```
 
-#### 3. Run Streamlit Web Application
-```bash
-streamlit run app.py
-```
-
-#### 4. Open Power BI Dashboard
-- Double-click [`Supportlytics_IT_Support_Analytics_Dashboard.pbix`](Supportlytics_IT_Support_Analytics_Dashboard.pbix) to launch directly in **Power BI Desktop**.
+#### 3. Open Power BI Dashboard
+- Double-click [`Supportlytics_Dashboard.pbix`](Supportlytics_Dashboard.pbix) to launch directly in **Power BI Desktop**.
 
 ---
 
-### 19. Documentation
+### 18. Documentation
 - [Comprehensive Final Project Report](reports/Supportlytics_Comprehensive_Project_Report.md)
 - [Data Dictionary](reports/Data_Dictionary.md)
 - [Feature Engineering Summary](reports/Feature_Engineering_Summary.md)
@@ -300,28 +285,27 @@ streamlit run app.py
 
 ---
 
-### 20. Presentation
+### 19. Presentation
 - [Interactive Slide Deck (HTML Slideshow)](reports/Supportlytics_Presentation_Slides.html) (Open in browser; navigate with `Left`/`Right` arrow keys)
 - [Presentation Slide Deck (Markdown)](reports/Supportlytics_Presentation_Slides.md)
 
 ---
 
-### 21. Future Improvements
+### 20. Future Improvements
 - Implement machine learning models for predictive ticket resolution time forecasting.
 - Deploy automated NLP classification models for incoming ticket triage.
 - Connect live streaming APIs to Power BI Service for real-time SLA breach alerting.
 
 ---
 
-### 22. Project Status
+### 21. Project Status
 
 | Component | Status | Details |
 |---|---|---|
 | **Core Analytical Workflow** | Complete | All 6 Jupyter notebooks executed with zero errors. |
 | **Data Cleaning & Feature Engineering** | Complete | Processed dataset created with duration and score metrics. |
 | **Exploratory & Cluster Analytics** | Complete | 12 high-resolution figures generated in `reports/figures/`. |
-| **Power BI Dashboard** | Complete | 6-page interactive report with DAX measures and slicers verified. |
-| **Streamlit Dashboard** | Complete | Multi-page interactive application (`app.py`) verified. |
+| **Power BI Dashboard** | Complete | 6-page interactive report with DAX measures and slicers verified (`Supportlytics_Dashboard.pbix`). |
 | **Documentation & Reports** | Complete | Data dictionary, feature summary, and analytical reports finalized. |
 | **Presentation Materials** | Complete | Markdown deck and interactive HTML slide deck ready. |
 | **Repository Packaging** | Complete | `.gitignore` configured; structure prepared for GitHub. |
