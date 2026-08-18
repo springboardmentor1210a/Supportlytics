@@ -1,0 +1,6 @@
+Region,Ticket_Count,Avg_Resolution_Hrs,Avg_Performance_Score,Escalation_Rate
+South,299916,95.93,1.4,0.5
+North,279600,96.12,1.4,0.5
+West,200112,95.9,1.4,0.5
+East,140170,95.8,1.4,0.5
+Central,80202,96.03,1.4,0.5
