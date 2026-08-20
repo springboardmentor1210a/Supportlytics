@@ -157,6 +157,9 @@ Supportlytics/
 | `IT_Support_Cleaned.csv` | Cleaned dataset prepared for analysis |
 | `IT_Support_Clustered.csv` | Dataset containing clustering and similarity analysis |
 | `Geo_Map.html` | Geographic visualization |
+| `Supportlytics_Dashboard.pbix` | Final six-page Power BI dashboard |
+| `README.md` | Project overview and documentation |
+| `Supportlytics project documentation.docx` | Complete project documentation |
 | `.gitattributes` | Git LFS configuration |
 | `LICENSE` | Repository license |
 ## 🔍 Key Analytical Questions
